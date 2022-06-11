@@ -31,7 +31,9 @@
 		"andys8.jest-snippets",
 		"donjayamanne.githistory",
 		"GitHub.copilot",
-		"vivaxy.vscode-conventional-commits"
+		"vivaxy.vscode-conventional-commits",
+		"firsttris.vscode-jest-runner",
+		"jakob101.relativepath"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
