@@ -1,6 +1,7 @@
 import { CategoryProps } from ".";
 import { AggregateRoot } from "../../../core/base-classes/aggregate-root.entity";
 import { Result } from "../../../core/base-classes/result";
+import { BadRequestException } from "../../../core/expeptions/bad-request.expection";
 import { ValidatorRules } from "../../../core/validators/validator-rules";
 
 import { UniqueID } from "../../../core/value-objects/ID.vo";
@@ -29,7 +30,10 @@ export class Category extends AggregateRoot<CategoryProps>{
   // }
   public static validate(data: CategoryProps):void {
     const validator = CategoryValidatorFactory.create()
-    validator.validate(data);
+    const isValidresult = validator.validate(data);
+    if (!isValidresult) {
+      throw new BadRequestException('Invalid data was provided, please check the errors', validator.errors);
+    }
   }
 
 
