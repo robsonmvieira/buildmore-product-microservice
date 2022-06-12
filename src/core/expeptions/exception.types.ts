@@ -1,3 +1,5 @@
+import { BadRequestException } from "./bad-request.expection";
+
 export enum Exceptions {
   argumentInvalid = 'ArgumentInvalidException',
   argumentOutOfRange = 'ArgumentOutOfRangeException',
@@ -5,6 +7,7 @@ export enum Exceptions {
   notFound = 'NotFoundException',
   domainException = 'DomainException',
   conflict = 'ConflictException',
-  validation ='ValidationException'
+  validation ='ValidationException',
+  badRequest = 'BadRequestException'
 
 }

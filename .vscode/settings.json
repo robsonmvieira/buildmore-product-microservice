@@ -3,6 +3,7 @@
     "infrastructure",
     "modules",
     "tests",
-    "core"
+    "core",
+    "dependencies"
   ]
 }
