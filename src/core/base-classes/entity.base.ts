@@ -60,4 +60,9 @@ export abstract class Entity<T extends BaseDomainEntity> {
       ...this._props
     } as Required<{id: string} & T>
   }
+  get value() {
+    return {
+      ...this._props,
+    }
+  }
 }
