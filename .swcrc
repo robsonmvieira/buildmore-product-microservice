@@ -3,6 +3,11 @@
     "parser": {
       "syntax":"typescript",
       "decorators": true
+    },
+    "baseUrl": "./src",
+    "paths": {
+      "#core/*": ["./core/*"],
+      "#modules/*": ["./modules/*"]
     }
   }
 }

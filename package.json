@@ -1,13 +1,15 @@
 {
-  "name": "app",
+  "name": "micro-product-build-more",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:w": "jest --watch",
+    "test:c": "jest --coverage",
     "ts-node": "ts-node",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "tsc:check": "npm run tsc -- --noEmit"
   },
   "keywords": [],
   "author": "",
@@ -21,10 +23,16 @@
     "@types/uuid": "^8.3.4",
     "jest": "^28.1.0",
     "ts-node": "^10.8.1",
-    "typescript": "^4.7.3"
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.7.3",
+    "typescript-transform-paths": "^3.3.1"
   },
   "dependencies": {
     "class-validator": "^0.13.2",
     "uuid": "^8.3.2"
+  },
+  "imports": {
+    "#core/*": "./dist/core/*.js",
+    "#modules/*": "./dist/modules/*.js"
   }
 }
