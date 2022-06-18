@@ -1,6 +1,9 @@
 {
   "conventionalCommits.scopes": [
     "infrastructure",
-    "modules"
+    "modules",
+    "tests",
+    "core",
+    "dependencies"
   ]
 }
