@@ -1,38 +1,32 @@
 {
-  "name": "micro-product-build-more",
+  "name": "builder-more-products",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "workspaces": ["./src/cross", "./src/nestjs"],
+  "dependencies": {
+    "class-validator": "^0.13.2",
+    "jest": "^28.1.0",
+    "ttypescript": "^1.5.13",
+    "typescript-transform-paths": "^3.3.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "jest",
-    "test:w": "jest --watch",
-    "test:c": "jest --coverage",
-    "ts-node": "ts-node",
-    "tsc": "tsc",
-    "tsc:check": "npm run tsc -- --noEmit"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robsonmvieira/buildmore-product-microservice.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@faker-js/faker": "^7.2.0",
-    "@swc/core": "^1.2.197",
-    "@swc/jest": "^0.2.21",
-    "@types/jest": "^28.1.1",
-    "@types/node": "^14.14.31",
-    "@types/uuid": "^8.3.4",
-    "jest": "^28.1.0",
-    "ts-node": "^10.8.1",
-    "ttypescript": "^1.5.13",
-    "typescript": "^4.7.3",
-    "typescript-transform-paths": "^3.3.1"
+  "bugs": {
+    "url": "https://github.com/robsonmvieira/buildmore-product-microservice/issues"
   },
-  "dependencies": {
-    "class-validator": "^0.13.2",
-    "uuid": "^8.3.2"
-  },
-  "imports": {
-    "#core/*": "./dist/core/*.js",
-    "#modules/*": "./dist/modules/*.js"
-  }
+  "homepage": "https://github.com/robsonmvieira/buildmore-product-microservice#readme"
 }
