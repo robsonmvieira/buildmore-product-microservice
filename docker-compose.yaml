@@ -7,3 +7,5 @@ services:
    container_name: micro-product-admin
    volumes:
      - .:/home/node/app
+   ports:
+     - 3000:3000
