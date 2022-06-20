@@ -1,34 +1,14 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-
-    "incremental": true,
-    "target": "es2020",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true, 
-
-    "module": "commonjs",
     "baseUrl": "./src", 
     "outDir": "./dist",
-    "plugins": [
-      {"transform": "typescript-transform-paths"},
-      {"transform": "typescript-transform-paths", "afterDeclarations": true},
-    ],
-    "declaration": true,
     "paths": {
       "#core/*": ["./core/*"],
       "#modules/*": ["./modules/*"],
     
-    },
-
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "strict": true,
-    "noImplicitAny": false,
-    "skipLibCheck": true,
-    "strictPropertyInitialization": false,
-    "strictNullChecks": false
+    }
   },
-  "include": ["src"],
+  "include": ["core", "modules"],
   "exclude": ["node_modules", "dist", "build", "coverage", "typings", "*.d.ts"],
 }

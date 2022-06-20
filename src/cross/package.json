@@ -9,7 +9,9 @@
     "test:c": "jest --coverage",
     "ts-node": "ts-node",
     "tsc": "tsc",
-    "tsc:check": "npm run tsc -- --noEmit"
+    "tsc:check": "npm run tsc -- --noEmit",
+    "build": "tsc -b ./tsconfig.json",
+    "build:w": "tsc -b ./tsconfig.json -w"
   },
   "keywords": [],
   "author": "",
@@ -34,5 +36,16 @@
   "imports": {
     "#core/*": "./dist/core/*.js",
     "#modules/*": "./dist/modules/*.js"
+  },
+  "exports": {
+    "./modules/category": "./dist/modules/category/entities/index.js"
+    
+  },
+  "typesVersions": {
+    ">=4.0": {
+      "modules/category": [
+        "./dist/modules/category/entities/index.d.ts"
+      ]
+    }
   }
 }
