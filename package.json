@@ -6,7 +6,11 @@
   "directories": {
     "test": "tests"
   },
-  "workspaces": ["./src/cross", "./src/nestjs"],
+  "workspaces": [
+    "./src/cross",
+    "./src/nestjs",
+    "./tests/tests"
+  ],
   "dependencies": {
     "class-validator": "^0.13.2",
     "jest": "^28.1.0",
@@ -14,9 +18,18 @@
     "typescript-transform-paths": "^3.3.1",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.7.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart:dev": "npm run build -w cross",
+    "start:dev": "npm run build:w -w cross & npm run start:dev -w nestjs",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

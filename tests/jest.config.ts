@@ -1,8 +1,4 @@
 export default {
-  displayName: {
-    name: 'Cross',
-    color: 'blue',
-  },
 
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
@@ -11,8 +7,8 @@ export default {
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
 
-  // The root directory that Jest should scan for tests and modules within
-  rootDir: './',
+    // The root directory that Jest should scan for tests and modules within
+    roots: ['<rootDir>'],
     
 
     // An array of glob patterns indicating a set of files for which coverage information should be collected
@@ -39,7 +35,7 @@ export default {
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [".*\\..*spec\\.ts$"],
-  testRegex: '.*\\..spec\\.ts$',
+  testRegex: '.*\\.spec\\.ts$',
 
    transform: {
      "^.+\\.ts?$": ["@swc/jest"],

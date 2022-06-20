@@ -5,6 +5,7 @@ services:
   app:
    build: .
    container_name: micro-product-admin
+   command: .docker/start.sh
    volumes:
      - .:/home/node/app
    ports:

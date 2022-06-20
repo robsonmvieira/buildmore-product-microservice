@@ -1,5 +1,5 @@
 import { Entity } from "../base-classes/entity.base";
-import { NotFoundException } from "../expeptions";
+import { NotFoundException } from "../exceptions";
 import { IRepository, ISearchableRepository, SearchResult as SR, SearchParams as SP } from "./base.repository";
 
 export abstract class InMemoryRepository<Props, T extends Entity<Props>> implements IRepository<Props, T> {

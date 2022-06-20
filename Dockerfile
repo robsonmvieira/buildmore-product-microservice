@@ -8,7 +8,8 @@ RUN  mkdir -p /usr/share/man/man1 && \
     openjdk-11-jre \
     zsh \
     curl \
-    wget
+    wget \
+    procps
 
 RUN npm i -g @nestjs/cli@8.2.5 npm@8.5.5
 
@@ -18,4 +19,4 @@ USER node
 
 WORKDIR /home/node/app
 
-CMD [ "sh", "-c", "npm install && tail -f /dev/null" ]
+CMD [ "tail", "-f", "/dev/null" ]

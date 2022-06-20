@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./", 
+    "outDir": "./dist",
+    "paths": {
+      "#core/*": ["./core/*"],
+      "#modules/*": ["./modules/*"],
+    
+    }
+  },
+  "include": ["core", "modules"],
+  "exclude": ["node_modules", "dist", "build", "coverage", "typings", "*.d.ts"],
+}

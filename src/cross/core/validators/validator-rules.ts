@@ -1,4 +1,4 @@
-import { ValidationException } from "../expeptions/validation.expection"
+import { ValidationException } from "../exceptions"
 
 export class ValidatorRules {
 

@@ -1,7 +1,7 @@
 import { CategoryProps } from ".";
 import { AggregateRoot } from "../../../core/base-classes/aggregate-root.entity";
 import { Result } from "../../../core/base-classes/result";
-import { BadRequestException } from "../../../core/expeptions/bad-request.expection";
+import { BadRequestException } from "../../../core/exceptions";
 import { ValidatorRules } from "../../../core/validators/validator-rules";
 
 import { UniqueID } from "../../../core/value-objects/ID.vo";
