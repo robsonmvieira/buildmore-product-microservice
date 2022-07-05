@@ -18,8 +18,8 @@ export default {
     "**/*.(t|j)s"
   ],
   coverageDirectory: "../coverage",
-  testEnvironment: "node",
-  moduleNameMapper: {
-    'cross/(.*)$': '<rootDir>/../../../node_modules/cross/dist/$1',
-  }
+  testEnvironment: "node"
+  // moduleNameMapper: {
+  //   'cross/(.*)$': '<rootDir>/../../../node_modules/cross/dist/$1',
+  // }
 }

@@ -33,7 +33,9 @@
 		"GitHub.copilot",
 		"vivaxy.vscode-conventional-commits",
 		"firsttris.vscode-jest-runner",
-		"jakob101.relativepath"
+		"firsttris.vscode-jest-runner",
+		"jakob101.relativepath",
+		"humao.rest-client"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

@@ -38,13 +38,17 @@
     "#modules/*": "./dist/modules/*.js"
   },
   "exports": {
-    "./modules/category": "./dist/modules/category/entities/index.js"
+    "./modules/category/entities": "./dist/modules/category/entities/index.js",
+    "./modules/category/application/use-cases": "./dist/modules/category/application/use-cases/index.js"
     
   },
   "typesVersions": {
     ">=4.0": {
       "modules/category": [
         "./dist/modules/category/entities/index.d.ts"
+      ],
+      "modules/category/application/use-cases": [
+        "./dist/modules/category/application/use-cases/index.d.ts"
       ]
     }
   }

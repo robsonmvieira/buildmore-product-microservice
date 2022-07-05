@@ -4,7 +4,7 @@ import {
   SearchParams as SearchParamsDefault,
   SearchResult as SearchResultDefault } from '../../../../core/repository/base.repository';
 
-export namespace CategoryReposiory {
+export namespace CategoryRepository {
   export class SearchParams extends SearchParamsDefault{}
   
   export class SearchResult extends SearchResultDefault<CategoryProps, Category>{}
@@ -14,4 +14,4 @@ export namespace CategoryReposiory {
   }
 }
 
-export default CategoryReposiory;
+export default CategoryRepository;
